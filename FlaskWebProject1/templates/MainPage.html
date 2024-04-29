@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+    <style>
+        body {
+            background: url({{ url_for('static',filename='Image/1.png')}}) no-repeat center top;
+            background-size:contain;
+   		    background-attachment:fixed;
+        }
+        button.b1{
+            position:absolute;
+            right:32%;
+            bottom:12%;
+            font-size:16px;
+            width: 200px; 
+            height: 50px;
+            border:none;
+            background:url({{url_for('static',filename="Image/Explore.png")}}) no-repeat;
+            background-size:contain;
+        }
+    </style>
+</head>
+<body>
+    <a href="{{url_for('Tool')}}"><button type="button" class="b1"></button></a> 
+
+</body>
+</html>
